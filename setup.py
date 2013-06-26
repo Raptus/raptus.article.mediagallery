@@ -9,7 +9,7 @@ long_description = (
     'Contributors\n'
     '============\n'
     + '\n' +
-    open('CONTRIBUTORS.txt').read()
+    open('CONTRIBUTORS.txt').read() + "\n" +
     open("CHANGES.txt").read())
 
 setup(name='raptus.article.mediagallery',
@@ -35,6 +35,7 @@ setup(name='raptus.article.mediagallery',
           'setuptools',
           'raptus.article.core',
           'raptus.article.images',
+          'raptus.touchswipe',
           # -*- Extra requirements: -*-
       ],
       entry_points="""
