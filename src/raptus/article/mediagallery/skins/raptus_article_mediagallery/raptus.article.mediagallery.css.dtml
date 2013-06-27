@@ -3,8 +3,8 @@
 
 .media .wrapped {
   overflow:hidden;
-  max-width:<dtml-var portalMaxWidthPadded missing="1200px">;
-  margin:0 auto;
+  padding-left:0;
+  padding-right:0;
 }
 
 .media .wrapped > img {
@@ -79,8 +79,6 @@
   position:relative;
   height:0;
   overflow:visible;
-  max-width:<dtml-var portalMaxWidthPadded missing="1200px">;
-  margin:0 auto;
 }
 
 .media-enhanced .nav-wrapper ul.nav {
@@ -88,7 +86,7 @@
   top:30px;
   right:0;
   z-index:1;
-  padding:0 0 0 40px;
+  padding:0 40px;
   text-align:right;
 }
 

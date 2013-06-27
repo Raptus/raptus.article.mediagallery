@@ -45,7 +45,7 @@ var mediagallery = {
           });
           wrapped = group.css('height', 'auto').find('.wrapped').removeAttr('style');
           wrapped.css({
-            'width': wrapped.outerWidth() - navwidth,
+            'width': wrapped.outerWidth() - parseInt(wrapped.css('padding-left')) - navwidth,
             'padding-right': navwidth
           }).find('> ul').css('width', width);
           height = Math.max(group.height(), height);
