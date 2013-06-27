@@ -9,7 +9,7 @@
   <div class="media">
 
     <ul class="visualNoMarker manageableList"
-        i18n:domain="swisshaus.article"
+        i18n:domain="raptus.article"
         tal:condition="view/media">
       <tal:item repeat="item view/media">
       <li>

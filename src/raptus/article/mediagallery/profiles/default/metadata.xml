@@ -2,7 +2,7 @@
 <metadata>
   <version>1</version>
   <dependencies>
-    <dependency>profile-raptus.article.images:default</dependency>
     <dependency>profile-raptus.touchswipe:default</dependency>
+    <dependency>profile-raptus.article.images:default</dependency>
   </dependencies>
 </metadata>

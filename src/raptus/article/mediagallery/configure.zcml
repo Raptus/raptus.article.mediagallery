@@ -36,4 +36,42 @@
       recursive="True"
       />
 
+    <adapter
+      factory=".extender.VideoExtender"
+      for="raptus.article.media.interfaces.IVideo"
+      name="swisshaus.article.video"
+      zcml:condition="installed raptus.article.media" />
+
+    <adapter
+      factory=".extender.VideoExtender"
+      for="raptus.article.media.interfaces.IVideoEmbed"
+      name="swisshaus.article.videoembed"
+      zcml:condition="installed raptus.article.media" />
+
+    <adapter
+      factory="raptus.article.core.componentselection.ComponentSelectionDefault"
+      for="raptus.article.media.interfaces.IVideo"
+      name="components"
+      zcml:condition="installed raptus.article.media" />
+
+    <adapter
+      factory="raptus.article.core.componentselection.ComponentSelectionDefault"
+      for="raptus.article.media.interfaces.IVideoEmbed"
+      name="components"
+      zcml:condition="installed raptus.article.media" />
+
+    <adapter 
+      factory=".extender.Index"
+      for="raptus.article.media.interfaces.IVideo
+           Products.ZCatalog.interfaces.IZCatalog"
+      name="component"
+      zcml:condition="installed raptus.article.media" />
+
+    <adapter 
+      factory=".extender.Index"
+      for="raptus.article.media.interfaces.IVideoEmbed
+           Products.ZCatalog.interfaces.IZCatalog"
+      name="component"
+      zcml:condition="installed raptus.article.media" />
+
 </configure>
