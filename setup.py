@@ -33,7 +33,7 @@ setup(name='raptus.article.mediagallery',
       zip_safe=False,
       install_requires=[
           'setuptools',
-          'raptus.article.core',
+          'raptus.article.core>2.0b12',
           'raptus.article.images',
           'raptus.touchswipe',
           # -*- Extra requirements: -*-

@@ -85,7 +85,7 @@ class Viewlet(ViewletBase):
         mship = getToolByName(self.context, 'portal_membership')
         catalog = getToolByName(self.context, 'portal_catalog')
         args = {}
-        if not mship.checkPermission(MANAGE_PERMISSION, self.context):
+        if not interfaces.IArticleEditView.providedBy(self.view) or not mship.checkPermission(MANAGE_PERMISSION, self.context):
             args['component'] = self.component
         types = [IATImage.__identifier__]
         if TEASER:
