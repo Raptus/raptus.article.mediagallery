@@ -213,7 +213,7 @@ var mediagallery = {
 
   $(document).ready(function() {
     mediagallery.init($('body'));
-    $('.viewletmanager').on('viewlets.updated', function(e) {
+    $('.viewletmanager').bind('viewlets.updated', function(e) {
       mediagallery.init($(this));
     });
   });

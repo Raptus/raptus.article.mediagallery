@@ -107,7 +107,7 @@ class Viewlet(ViewletBase):
                              'description': item['brain'].Description,
                              'childs': []})
                 teaser = ITeaser(item['obj'])
-                item['image'] = teaser.getTeaser('mediagroup')
+                item['image'] = teaser.getTeaser(self.thumb_size + 'group')
                 childs = catalog(object_provides=[IATImage.__identifier__,
                                                   IVideo.__identifier__,
                                                   IVideoEmbed.__identifier__],
