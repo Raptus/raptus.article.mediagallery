@@ -4,7 +4,7 @@ Changelog
 1.0a4 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Corrected wrong adapter names
 
 
 1.0a3 (2013-07-03)

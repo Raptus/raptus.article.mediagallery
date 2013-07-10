@@ -39,13 +39,13 @@
     <adapter
       factory=".extender.VideoExtender"
       for="raptus.article.media.interfaces.IVideo"
-      name="swisshaus.article.video"
+      name="raptus.article.video"
       zcml:condition="installed raptus.article.media" />
 
     <adapter
       factory=".extender.VideoExtender"
       for="raptus.article.media.interfaces.IVideoEmbed"
-      name="swisshaus.article.videoembed"
+      name="raptus.article.videoembed"
       zcml:condition="installed raptus.article.media" />
 
     <adapter
